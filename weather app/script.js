@@ -42,5 +42,3 @@ input.addEventListener('keydown', () => {
     }
 })
 
-// displayWeather()
-// key = cb642d8bcb13d37ea189cb1e1b28dd61
