@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing:border-box;
+    font-family:'poppins';
+}
+
+body {
+    justify-content: center;
+    background:#04263f;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-container {
+    width:clamp(300px, 44vw, 400px);
+    /* height:12%; */
+    background:white;
+    margin:auto;
+    border-radius:10px;
+    padding:23px;
+    /* justify-content: center; */
+}
+
+input {
+    border:none;
+    outline:none;
+    margin-left:3px;
+    width:100%;
+    font-size:1.3em;
+    size:1;
+}
+
+.head {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location {
+    display:flex;
+    align-items: center;
+    height:100%;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search span {
+    width:31px;
+    height: 31px;
+    border-radius: 50%;
+    background:#dff3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in;
+}
+
+.search span i {
+    color:#06283d;
+}
+
+.search:hover span{
+    cursor: pointer;
+    background:hsl(203, 42%, 75%);
+    transform: scale(1.1);
+}
+
+main {
+    display:none;
+    transition:.2s ease;
+    text-align: center;
+}
+
+main img {
+    max-width:60%;
+}
+
+#degrees {
+    font-size:2.3em;
+}
+
